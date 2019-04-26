@@ -1,0 +1,254 @@
+1.0	object	has	speed decrease in forward motion
+1.0	summer	is in	Southern Hemisphere
+1.0	seed dispersal	example of is	animals
+0.9898709668269359	example	flying in	winter
+1.0	bee	is animal	animal fur keeping
+1.0	switch	is in	simple series circuit
+1.0	different areas	is in	sky
+1.0	temperature	is in	environment decreases
+1.0	nonrenewable resource	is in	sky
+1.0	flower	has	purpose
+1.0	carbon dioxide concentrations	is in	air
+1.0	kind	is in	ecosystem
+1.0	plant 's roots ' growth	is in	soil
+0.9948741603776002	example	is	more than once organism looking
+1.0	observations	is in	form of electrical signals
+1.0	example	is	footprint
+0.9802286696784321	example	is	salmon returning to their birthplace
+0.8666656843335396	eggs	example of	reproduction
+1.0	fossil	example of is	footprint
+1.0	decomposer	is In	food chain process fungi
+1.0	crack	is in	rock
+1.0	entire communities	is in	ecosystem change over time
+1.0	wood	is	renewable
+0.9802286696784321	behavior	example of is	salmon
+0.9663852787540961	change	example of is	plants
+1.0	bee	is pollinating animal	animal growing thick fur keeping
+1.0	bee	is animal	animal growing fur keeping
+0.8149262421447928	instinct	example of is	kangaroo 's ability crawl
+1.0	two equal forces	is in	opposite directions
+0.9834381084288014	example	is	acid
+0.013682208549051259	example	returning	lay
+1.0	Earth	of	surface cause wind
+1.0	waste product	is In	respiration process carbon dioxide
+1.0	something	is	when color as its environment
+1.0	winter	is in	hemisphere
+1.0	winter	is in	northern hemisphere
+1.0	winter	is in	northern hemisphere
+1.0	winter	is in	northern hemisphere
+1.0	survival	is in	dry environment
+1.0	example	laying	eggs
+0.9663852787540961	example	is	plants dying
+0.886511125278686	waste	example of	conservation
+0.9468390484089415	example	cracking	open clams
+1.0	brick	is	electrical
+0.4979296615290937	example	building	nest
+1.0	organism	has	prey
+1.0	bee	is	pollinating
+1.0	footprint	is in	rock
+1.0	December 21st	is in	northern hemisphere
+1.0	animal	is	growing
+1.0	otter	cracking	open clams
+1.0	bee	is pollinating animal	animal fur keeping
+1.0	animal	is	thick
+1.0	stage	is in	metamorphosis process of animals
+1.0	compass	has	needle lines up with magnetic poles
+1.0	June 21st	is in	northern hemisphere
+1.0	example	is bones of	animal
+0.9663852787540961	change	example of is	plants dying
+0.9802286696784321	reproductive behavior	example of is	salmon
+1.0	moon	of	phases
+1.0	something	is	when same color
+0.9751900071254295	fossil	example of is	paw print in rock
+0.9549533731630852	example	burying	itself
+1.0	substance	is in	water
+1.0	oil	is	nonrenewable
+1.0	organism	on	survival
+1.0	organism	on	survival
+1.0	organism	on	survival
+1.0	organism	on	survival
+1.0	organism	on	survival
+1.0	animal	on	health
+0.6713091358738652	example	returning to	their birthplace
+0.9881248833949586	inherited behavior	example of is	bird
+0.8149262421447928	example	is	kangaroo 's ability crawl into its mother 's pouch
+0.9948741603776002	camouflage	example of is	organism looking like leaves
+1.0	change	is in	Earth
+0.8666656843335396	boat	example of	navigation
+0.8149262421447928	example	is	kangaroo 's ability crawl
+0.9807419485219697	moisture	example of is	water vapor in atmosphere
+1.0	plastic	is	nonrenewable
+1.0	Matter	is in	liquid phase
+1.0	Matter	is in	liquid phase
+1.0	coal	is	nonrenewable
+1.0	Earth	has	tilt on axis
+0.9948741603776002	camouflage	example of is	organism looking
+1.0	stage	is in	life cycle process
+1.0	planet	has	atmosphere
+0.9199014306965604	electrical conductor	is vehicle for	flow of electricity
+0.9663852787540961	seasonal change	example of is	plants
+1.0	moon	has	surface
+1.0	moon	has	surface
+1.0	moon	has	surface
+0.9468390484089415	example	cracking	clams
+1.0	animal	is	animal fur keeping
+1.0	bird	is	pollinating
+1.0	organism	has	acquired characteristics
+0.9802286696784321	reproductive behavior	example of is	salmon returning to their birthplace
+0.9948741603776002	camouflage	example of is	organism
+1.0	raw material	is in	process
+1.0	summer	is in	southern hemisphere
+0.9199014306965604	electrical conductor	is vehicle for	flow
+0.8783530908820099	example	example of	seed dispersal
+1.0	wood	is	thermal
+1.0	gas	is in	open container
+0.5132386373842351	example	crawl into	its mother 's pouch
+1.0	Earth	has	surface
+1.0	wind	is	inexhaustible
+0.9199014306965604	electrical conductor	is	vehicle
+1.0	something	is	when same color as its environment
+0.9751900071254295	example	is	paw print
+1.0	bee	is pollinating animal	animal thick fur keeping
+0.9802286696784321	behavior	example of is	salmon returning to their birthplace
+0.9751900071254295	fossil	example of is	paw print
+0.9948741603776002	camouflage	example of is	than once organism
+1.0	object	is in	opposite direction
+1.0	something	is color as	its environment
+1.0	Earth	with	magnetic poles
+1.0	example	is	animals
+1.0	plant	has	roots
+1.0	flow	is in	electrical circuit
+0.9199014306965604	conductor	is	vehicle
+1.0	earth	of	water
+0.9948741603776002	camouflage	example of is	than once organism looking like leaves
+0.9948741603776002	example	is	than once organism looking like leaves
+1.0	fossil	example of is	bones
+1.0	wood	is	electrical
+0.7621226810319212	example	eating	seeds
+1.0	otter	cracking clams with	rock
+1.0	something	has	same color
+1.0	winter	is in	southern hemisphere
+1.0	winter	is in	southern hemisphere
+0.9802286696784321	reproductive behavior	example of is	salmon returning
+1.0	decrease	is in	visibility
+1.0	Matter	is in	gas phase
+1.0	Matter	is in	gas phase
+0.9948741603776002	camouflage	example of is	more than once organism looking like leaves
+0.9948741603776002	example	is	organism
+1.0	insects	is with	stick
+1.0	object	has	speed increase in forward motion
+0.9199014306965604	conductor	is vehicle for	flow
+0.9468390484089415	example	cracking clams with	rock
+1.0	compass lines	of needle is	needle points north
+1.0	largest organ	is in	human body
+0.9881248833949586	bird	building	nest
+0.9663852787540961	example	is	plants dying in winter
+0.9881248833949586	behavior	example of is	bird
+0.9834381084288014	change	example of is	acid
+1.0	something	is	color
+1.0	water vapor	is in	atmosphere
+1.0	source	is in	ecosystem
+1.0	source	is in	ecosystem
+1.0	source	is in	ecosystem
+1.0	otter	cracking open clams with	rock
+1.0	something	is	learned
+0.9802286696784321	example	is	salmon
+1.0	paw print	is in	rock
+1.0	animals	eating	seeds
+0.9948741603776002	example	is	than once organism looking
+1.0	example	directing	boat
+0.9948741603776002	example	is	more than once organism looking like leaves
+1.0	something	has	color
+0.8289752226751463	example	is	ocean becoming
+1.0	Earth	on	oceans
+1.0	insect	is	pollinating
+0.9663852787540961	seasonal change	example of is	plants dying in winter
+1.0	stars	is in	night sky
+1.0	Matter	is in	solid phase
+1.0	bee	is animal	animal thick fur keeping
+0.9948741603776002	example	is	than once organism
+1.0	two object	has	surfaces
+1.0	atoms	is in	stars
+1.0	kangaroo	has	ability crawl into pouch
+0.9807419485219697	example	is	water vapor in atmosphere
+1.0	bee	is	animal
+1.0	example	is bones of	extinct animal
+0.8949052952166932	fossil fuel	example of	conservation
+1.0	plant	'	roots
+1.0	bee	is	pollinating animal
+1.0	animal	has	brain
+1.0	nuclear reactions	is in	stars
+1.0	evaporation	example of is	body
+1.0	insect	of	life cycle
+1.0	wind	is	renewable
+0.9948741603776002	example	is	more than once organism
+1.0	compass lines	is with	up Earth 's magnetic poles
+1.0	something	is same color as	its environment
+0.9881248833949586	example	is	bird
+1.0	bee	is pollinating animal	animal growing fur keeping
+1.0	Earth	on	axis
+1.0	example	is	body
+0.8289752226751463	example	is	ocean
+1.0	fossil	example of is	footprint in rock
+0.9199014306965604	conductor	is vehicle for	flow of electricity
+1.0	bee	is animal	animal growing thick fur keeping
+0.9898709668269359	example	flying south in	winter
+1.0	living thing	on	health
+1.0	water increases	is in	environment
+1.0	number	is in	tree trunk
+1.0	mother	into	pouch
+0.9948741603776002	camouflage	example of is	than once organism looking
+1.0	organism	on	health
+1.0	organism	on	health
+1.0	amount	is in	milk
+1.0	something	is	raw
+1.0	something	is	raw
+1.0	temperature	is in	environment
+1.0	temperature	is in	environment
+1.0	air	is in	blood
+0.9663852787540961	change	example of is	plants dying in winter
+1.0	sediment	is in	flood plains
+0.9802286696784321	behavior	example of is	salmon returning
+1.0	example	is body of	water
+1.0	birds	is with	beaks of different shapes
+1.0	electrical current runs	is in	circuit
+1.0	example	is	bones
+0.9807419485219697	example	is	water vapor
+0.9948741603776002	camouflage	example of is	more than once organism
+1.0	amount	is in	soil
+1.0	raw material	is In	photosynthesis process oxygen
+0.9751900071254295	example	is	paw print in rock
+1.0	producer	is In	photosynthesis process carbon dioxide
+0.8289752226751463	change	example of is	ocean becoming
+1.0	tunnels	is in	soil
+1.0	tunnels	is in	soil
+1.0	Earth	has	magnetic patterns
+1.0	feathers	are	thermal
+1.0	example	is	otter
+1.0	stage	is in	water cycle process
+0.9834381084288014	chemical change	example of is	acid
+1.0	hunting	example of is	otter
+1.0	pollinating animal	is	animal fur keeping
+0.9802286696784321	example	is	salmon returning
+0.9663852787540961	seasonal change	example of is	plants dying
+1.0	something	is	when color
+0.9663852787540961	example	is	plants
+0.9807419485219697	moisture	example of is	water vapor
+1.0	environment	is with	little food
+0.8149262421447928	instinct	example of is	kangaroo 's ability crawl into its mother 's pouch
+0.9948741603776002	example	is	organism looking
+1.0	negative impact	is in	area
+1.0	June 21st	is in	southern hemisphere
+1.0	carbon	is in	air
+0.9948741603776002	camouflage	example of is	more than once organism looking
+1.0	prey	on	ability reproduce
+1.0	otter	cracking	clams
+1.0	organism	has	environment
+0.8289752226751463	change	example of is	ocean
+1.0	example	is footprint in	rock
+0.8825752677263046	example	dying in	winter
+1.0	winter	is in	Northern Hemisphere
+0.9948741603776002	example	is	organism looking like leaves
+1.0	something	is	same color
+0.7947091115971466	example	looking like	leaves
+1.0	Earth	has	surface quickly
