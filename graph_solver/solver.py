@@ -10,12 +10,15 @@ import simplejson as json
 from flask import Flask, request
 from flask_cors import CORS
 import time
+from memory_profiler import profile
 
 class SolverBase:
     """
     interface for solvers. to implement one just inherit from this class and override
     `answer_question` and `solver_info`
     """
+    output = open("mem_usage.txt", "a+")
+    @profile(stream=output)
     def run(self, host='localhost', port=8000) -> None:
         """run the solver"""
         app = Flask(__name__)
