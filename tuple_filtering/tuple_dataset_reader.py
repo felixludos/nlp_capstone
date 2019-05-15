@@ -1,22 +1,15 @@
-from typing import Dict, List, Sequence, Iterable
-import itertools
-import logging
+from typing import Dict, Iterable
 
-from overrides import overrides
-
-from allennlp.common.checks import ConfigurationError
-from allennlp.common.file_utils import cached_path
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
-from allennlp.data.dataset_readers.dataset_utils import to_bioul
-from allennlp.data.fields import TextField, SequenceLabelField, Field, MetadataField
+from allennlp.data.fields import TextField
 from allennlp.data.instance import Instance
 from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer
-from allennlp.data.tokenizers import Token
 from allennlp.data.tokenizers import Tokenizer, WordTokenizer
+from overrides import overrides
 
 
-@DatasetReader.register("aristo")
-class AristoDatasetReader(DatasetReader):
+@DatasetReader.register("tuple_reader")
+class TupleDatasetReader(DatasetReader):
     def __init__(self,
                  lazy: bool,
                  tokenizer: Tokenizer,
@@ -33,9 +26,8 @@ class AristoDatasetReader(DatasetReader):
                 yield self.text_to_instance(subject, predicate, obj)
 
     def text_to_instance(self, subject: str, predicate: str, obj: str) -> Instance:
-        # FIXME: create different embedding spaces for subject, predicate and object
         subject_tokens = self._tokenizer.tokenize(subject)
-        predicate_tokens = [Token(predicate)]
+        predicate_tokens = self._tokenizer.tokenize(predicate)
         object_tokens = self._tokenizer.tokenize(obj)
 
         instance_dict = {
