@@ -1,3 +1,0 @@
-[submodule "tuple_generator/openie"]
-	path = tuple_generator/openie
-	url = https://github.com/philipperemy/Stanford-OpenIE-Python.git
