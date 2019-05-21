@@ -11,8 +11,8 @@ from overrides import overrides
 @DatasetReader.register("tuple_reader")
 class TupleDatasetReader(DatasetReader):
     def __init__(self,
-                 lazy: bool,
-                 tokenizer: Tokenizer,
+                 lazy: bool = False,
+                 tokenizer: Tokenizer = None,
                  token_indexers: Dict[str, TokenIndexer] = None) -> None:
         super().__init__(lazy)
         self._tokenizer = tokenizer or WordTokenizer()
@@ -25,15 +25,27 @@ class TupleDatasetReader(DatasetReader):
                 subject, predicate, obj = line.split('\t')
                 yield self.text_to_instance(subject, predicate, obj)
 
+    @overrides
     def text_to_instance(self, subject: str, predicate: str, obj: str) -> Instance:
         subject_tokens = self._tokenizer.tokenize(subject)
         predicate_tokens = self._tokenizer.tokenize(predicate)
         object_tokens = self._tokenizer.tokenize(obj)
 
         instance_dict = {
-            'subject': TextField(subject_tokens, self._token_indexers),
-            'predicate': TextField(predicate_tokens, self._token_indexers),
-            'object': TextField(object_tokens, self._token_indexers)
+            'subject_tokens': TextField(subject_tokens, self._token_indexers),
+            'predicate_tokens': TextField(predicate_tokens, self._token_indexers),
+            'object_tokens': TextField(object_tokens, self._token_indexers)
         }
 
         return Instance(instance_dict)
+
+
+@DatasetReader.register("concat_tuple_reader")
+class ConcatenatedTupleDatasetReader(TupleDatasetReader):
+    @overrides
+    def text_to_instance(self, subject: str, predicate: str, obj: str) -> Instance:
+        concatenated_tuple = " ".join((subject, predicate, object))
+        tokens = self._tokenizer.tokenize(concatenated_tuple)
+        return Instance({
+            "tokens": TextField(tokens, self._token_indexers)
+        })
