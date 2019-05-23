@@ -16,7 +16,6 @@ class TupleDatasetReader(DatasetReader):
                  token_indexers: Dict[str, TokenIndexer] = None) -> None:
         super().__init__(lazy)
         self._tokenizer = tokenizer or WordTokenizer()
-        print(token_indexers)
         self._token_indexers = token_indexers or {'tokens': SingleIdTokenIndexer}
 
     @overrides
