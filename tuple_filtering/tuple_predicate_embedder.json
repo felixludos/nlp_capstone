@@ -2,7 +2,6 @@
   "dataset_reader": {
     "type": "tuple_reader",
     "lazy": false,
-    "limit": 100,
     "token_indexers": {
       "tokens": {
         "type": "single_id",
@@ -10,7 +9,8 @@
       }
     }
   },
-  "train_data_path": "data/aristo.txt",
+  "train_data_path": "data/aristo/aristo_train.tsv",
+  "validation_data_path": "data/aristo/aristo_val.tsv",
   "model": {
     "type": "tuple_predicate_embedder",
     "entity_embedder": {
