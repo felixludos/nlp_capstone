@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 import torch
+from torch import nn
 from allennlp.data import Vocabulary
 from allennlp.models.model import Model
 from allennlp.modules import TextFieldEmbedder, FeedForward
@@ -11,10 +12,10 @@ from allennlp.nn import RegularizerApplicator
 class TuplePredicateEmbedder(Model):
     def __init__(self,
                  vocab: Vocabulary,
-                 regularizer: Optional[RegularizerApplicator],
                  entity_embedder: TextFieldEmbedder,
                  predicate_embedder: TextFieldEmbedder,
-                 output_layer: FeedForward):
+                 output_layer: FeedForward,
+                 regularizer: Optional[RegularizerApplicator] = None):
         # Ensure that output dim of predicate embedder is same as that of FeedForward
         if not predicate_embedder.get_output_dim() == output_layer.get_output_dim():
             raise RuntimeError("Predicate embedder dim must be equal to that of output layer")
@@ -23,6 +24,8 @@ class TuplePredicateEmbedder(Model):
         self._entity_embedder = entity_embedder
         self._predicate_embedder = predicate_embedder
         self._output_layer = output_layer
+
+        self.loss = nn.CrossEntropyLoss()
 
     def forward(self,
                 subject_tokens: Dict[str, torch.LongTensor],
@@ -41,8 +44,6 @@ class TuplePredicateEmbedder(Model):
         if predicate_tokens:
             predicate_embedding = self._predicate_embedder(predicate_tokens)
             loss = self.loss(out_embedding, predicate_embedding)
-            for metric in self.metrics.values():
-                metric(out_embedding, predicate_embedding)
             output_dict["loss"] = loss
 
         return output_dict
