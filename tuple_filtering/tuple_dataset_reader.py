@@ -16,6 +16,7 @@ class TupleDatasetReader(DatasetReader):
                  token_indexers: Dict[str, TokenIndexer] = None) -> None:
         super().__init__(lazy)
         self._tokenizer = tokenizer or WordTokenizer()
+        print(token_indexers)
         self._token_indexers = token_indexers or {'tokens': SingleIdTokenIndexer}
 
     @overrides
@@ -33,8 +34,8 @@ class TupleDatasetReader(DatasetReader):
 
         instance_dict = {
             'subject_tokens': TextField(subject_tokens, self._token_indexers),
-            'predicate_tokens': TextField(predicate_tokens, self._token_indexers),
-            'object_tokens': TextField(object_tokens, self._token_indexers)
+            'object_tokens': TextField(object_tokens, self._token_indexers),
+            'predicate_tokens': TextField(predicate_tokens, self._token_indexers)
         }
 
         return Instance(instance_dict)
