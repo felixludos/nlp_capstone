@@ -46,7 +46,6 @@ class TuplePredicateEmbedder(Model):
         )
 
         # Concatenate the entity embeddings and forward pass through FeedForward
-        print(subject_embedding.shape, object_embedding.shape)
         entities_cat = torch.cat([subject_embedding, object_embedding], dim=1)
         out_embedding = self._entity_output_layer(entities_cat)
 
