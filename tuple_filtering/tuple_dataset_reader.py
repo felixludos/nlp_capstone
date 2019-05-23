@@ -16,9 +16,7 @@ class TupleDatasetReader(DatasetReader):
                  tokenizer: Tokenizer = None,
                  token_indexers: Dict[str, TokenIndexer] = None) -> None:
         super().__init__(lazy)
-        if limit:
-            self._limit = limit
-
+        self._limit = limit
         self._tokenizer = tokenizer or WordTokenizer()
         self._token_indexers = token_indexers or {'tokens': SingleIdTokenIndexer}
 
@@ -26,8 +24,13 @@ class TupleDatasetReader(DatasetReader):
     def _read(self, file_path: str) -> Iterable[Instance]:
         with open(file_path, 'r') as data_file:
             for i, line in enumerate(data_file):
-                if i >= self._limit:
+                if self._limit and i >= self._limit:
                     return
+
+                line = line.strip()
+
+                if not line:
+                    continue
 
                 subject, predicate, obj = line.split('\t')
                 yield self.text_to_instance(subject, predicate, obj)
