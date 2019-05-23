@@ -2,6 +2,7 @@
   "dataset_reader": {
     "type": "tuple_reader",
     "lazy": false,
+    "limit": 100,
     "token_indexers": {
       "tokens": {
         "type": "single_id",
@@ -15,44 +16,70 @@
     "entity_embedder": {
       "token_embedders": {
         "tokens": {
-          "pretrained_file": "https://s3-us-west-2.amazonaws.com/allennlp/datasets/glove/glove.840B.300d.txt.gz",
           "type": "embedding",
           "embedding_dim": 300,
           "trainable": false
         }
       }
+    },
+    "entity_seq2vec": {
+      "type": "lstm",
+      "input_size": 300,
+      "hidden_size": 300,
+      "num_layers": 1,
+      "bidirectional": true
     },
     "predicate_embedder": {
       "token_embedders": {
         "tokens": {
-          "pretrained_file": "https://s3-us-west-2.amazonaws.com/allennlp/datasets/glove/glove.840B.300d.txt.gz",
           "type": "embedding",
           "embedding_dim": 300,
           "trainable": false
         }
       }
     },
-    "output_layer": {
-      "input_dim": 600,
+    "predicate_seq2vec": {
+      "type": "lstm",
+      "input_size": 300,
+      "hidden_size": 300,
+      "num_layers": 1,
+      "bidirectional": true
+    },
+    "entity_output_layer": {
+      "input_dim": 1200,
       "num_layers": 2,
-      "output_dims": [
-        300,
+      "hidden_dims": [
+        600,
         300
       ],
       "dropout": [
         0.2,
         0.0
+      ],
+      "activations": [
+        "relu",
+        "linear"
+      ]
+    },
+    "predicate_output_layer": {
+      "input_dim": 600,
+      "num_layers": 2,
+      "hidden_dims": [
+        600,
+        300
+      ],
+      "dropout": [
+        0.2,
+        0.0
+      ],
+      "activations": [
+        "relu",
+        "linear"
       ]
     }
   },
   "iterator": {
-    "type": "bucket",
-    "sorting_keys": [
-      [
-        "tokens",
-        "num_tokens"
-      ]
-    ],
+    "type": "basic",
     "batch_size": 100
   },
   "trainer": {

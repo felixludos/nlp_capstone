@@ -8,7 +8,7 @@ config_file = "tuple_filtering/tuple_predicate_embedder.json"
 package = "tuple_filtering"
 
 # Use overrides to train on CPU.
-# overrides = json.dumps({"trainer": {"cuda_device": -1}})
+overrides = json.dumps({"trainer": {"cuda_device": -1}})
 
 serialization_dir = "/tmp/debugger_train"
 
@@ -26,7 +26,7 @@ sys.argv = [
     config_file,
     "-s", serialization_dir,
     "--include-package", package,
-    # "-o", overrides,
+    "-o", overrides,
 ]
 
 main()
