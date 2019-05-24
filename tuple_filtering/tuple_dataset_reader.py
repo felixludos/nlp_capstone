@@ -11,17 +11,27 @@ from overrides import overrides
 @DatasetReader.register("tuple_reader")
 class TupleDatasetReader(DatasetReader):
     def __init__(self,
+                 limit: int = None,
                  lazy: bool = False,
                  tokenizer: Tokenizer = None,
                  token_indexers: Dict[str, TokenIndexer] = None) -> None:
         super().__init__(lazy)
+        self._limit = limit
         self._tokenizer = tokenizer or WordTokenizer()
         self._token_indexers = token_indexers or {'tokens': SingleIdTokenIndexer}
 
     @overrides
     def _read(self, file_path: str) -> Iterable[Instance]:
         with open(file_path, 'r') as data_file:
-            for line in data_file:
+            for i, line in enumerate(data_file):
+                if self._limit and i >= self._limit:
+                    return
+
+                line = line.strip()
+
+                if not line:
+                    continue
+
                 subject, predicate, obj = line.split('\t')
                 yield self.text_to_instance(subject, predicate, obj)
 
@@ -33,8 +43,8 @@ class TupleDatasetReader(DatasetReader):
 
         instance_dict = {
             'subject_tokens': TextField(subject_tokens, self._token_indexers),
-            'predicate_tokens': TextField(predicate_tokens, self._token_indexers),
-            'object_tokens': TextField(object_tokens, self._token_indexers)
+            'object_tokens': TextField(object_tokens, self._token_indexers),
+            'predicate_tokens': TextField(predicate_tokens, self._token_indexers)
         }
 
         return Instance(instance_dict)
